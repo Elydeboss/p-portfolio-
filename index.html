@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="scroll-smooth" oncontextmenu="return false">
+ <header class="sticky top-0 z-50">
+        <nav>
+            <div class="logo"><h1>My Portfolio</h1></div>
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="hover:bg-orange hover:text-white p-[10px] rounded-full">Home</a></li>
+                <li><a href="#about" class="hover:bg-sky-700 hover:text-white p-[10px] rounded-full">About</a></li>
+                <li><a href="#services" class="hover:bg-sky-700 hover:text-white p-[10px] rounded-full">Services</a></li>
+                <li><a href="#projects" class="hover:bg-sky-700 hover:text-white p-[10px] rounded-full">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="home">
+        <h1 class="text-xl font-bold">Welcome to My Portfolio</h1>
+        <img src="background.jpg" alt="" class="h-[500px] mt-12" id="mage">
+        
+        <div class="flex-row">
+            <a href="https://www.instagram.com/ely_jnr?igsh=YzljYTk1ODg3Zg==">
+                <img src="icons8-instagram-50.png" alt="" class="hover:scale-125 duration:300 ease-in-out gap-16">
+            </a>
+            <a href="https://x.com/ElijahTom241121?t=tuWRgWylgQT8RgUco72kPg&s=09">
+                <img src="icons8-x-50.png" alt="" class="hover:scale-125 duration:300 ease-in-out">
+            </a>  
+        </div>
+
+    </section>
+
+    <section id="about" class="mt-6 bg-[#F7F7F7]">
+        <h1 class="text-xl font-bold">About Me</h1>
+    
+     <!-- Container to hold both the image and the card -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 items-center justify-center">
+                <div>
+                    <!-- Image beside the card -->
+                    <img src="image2.jpg" alt="Profile Image" class="mr-0 w-[100%] max-w-sm min-w-md [20px] mt-[100px] mx-[50px] rounded-full">
+                </div>
+                    
+                <div class=" bg-white shadow-lg rounded-lg max-w-sm p-12 hover-effect h-48">
+                    <h3 class="text-xl font-semibold mb-4">2 Years</h3>
+                    <p>of experience.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover-effect h-48 ">
+                    <h3 class="text-xl font-semibold mb-4">Frontend developer</h3>
+                    <p>Experienced Frontend Developer with a demonstrated history of working in the web development industry.</p>
+                </div>
+
+            </div>    
+
+            <a href="my resume.pdf" download>
+                <button class="py-2 px-4 bg-purple-400 text-white rounded-full w-fit h-fit active:bg-purple-200 hover:scale-125 duration:300 ease-in-out">
+                    download my cv
+                </button>
+            </a>
+       
+    </section>
+
+    <section class="py-12" id="services">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Services</h2>
+
+            <!---flex box-->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:bg-orange-300 hover-effect">
+                    <h3 class="text-xl font-semibold mb-4">Web Development</h3>
+                    <p>Creating responsive, high-performance websites with modern web technologies.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:bg-orange-300 hover-effect">
+                    <h3 class="text-xl font-semibold mb-4">UI/UX Design</h3>
+                    <p>Designing intuitive user interfaces and experiences that captivate users.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:bg-orange-400 hover-effect">
+                    <h3 class="text-xl font-semibold mb-4">SEO Optimization</h3>
+                    <p>Improving website visibility and driving organic traffic through proven SEO strategies.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:bg-orange-400 hover-effect">
+                    <h3 class="text-xl font-semibold mb-4">E-commerce Solutions</h3>
+                    <p>Building robust e-commerce platforms that enhance the shopping experience and boost sales.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:bg-orange-400 hover-effect">
+                    <h3 class="text-xl font-semibold mb-4">Content Management Systems</h3>
+                    <p>Developing custom CMS solutions for easy content management and scalability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 bg-gray-50" id="projects">
+        <div class="container mx-auto my-16 px-4">
+            <h2 class="text-3xl font-bold text-center mb-16">Projects</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:bg-blue-100 hover-effect">
+                    <a href=""><img src="OIP.jpeg" alt="Portfolio Website" class="w-fit h-fit object-cover rounded-lg mb-4"></a>    
+                    <h3 class="text-xl font-semibold mb-4">Portfolio Website</h3>
+                    <p>A personal portfolio website showcasing my skills, projects, and experience, built with HTML, CSS, and JavaScript.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md hover:bg-blue-100 hover-effect">
+                    <a href="https://elydeboss.github.io/rock-paper/"><img src="rock-paper-scissors.png" alt="game" class="w-fit h-fit object-cover rounded-lg mb-4"></a>
+                    <h3 class="text-xl font-semibold mb-4">Rock, Papper, Scissors Game</h3>
+                    <p>a rock-paper-scissors mini game built using just html, css and vanila JavaScript lorem50.</p>
+                </div>
+
+            </div>
+
+
+        <div class="container mx-auto my-24 px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">future Projects</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2  gap-8">
+
+                <div class="bg-white p-6 rounded-lg shadow-md hover:bg-purple-200 hover-effect">
+                    <img src="OIP (2).jpeg" alt="E-commerce Platform" class="w-full h-fit object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-4">E-commerce Platform</h3>
+                    <p>Developed a full-featured e-commerce platform with React and Node.js, including payment integration and product management.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md hover:bg-purple-200 hover-effect">
+                    <img src="OIP (3).jpeg" alt="Responsive Web App" class="w-full h-fit object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-4">Responsive Web App</h3>
+                    <p>Built a responsive web application with Vue.js, optimized for performance and user experience across all devices.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+
+        <div class="container mx-auto py-8">
+            <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-4">Contact Me</h1>
+            
+            <div class="flex flex-col md:flex-row justify-center items-center">
+                <div class="md:w-1/2 p-4">
+                    <h2 class="text-xl font-semibold mb-2">Get in Touch</h2>
+                    <p class="mb-2">Feel free to reach out to me for any inquiries or collaborations. I'd love to hear from you!</p>
+                    
+                    <ul class="list-disc list-inside">
+                        <li>Email: tomelijah349@gmail.com</li>
+                        <li>Phone: +2347088432366</li>
+                    </ul>
+                </div>
+                
+                <div class="md:w-1/2 p-4">
+                    <div class="">
+
+                        <button type="submit" class="py-2 px-4 bg-blue-500 text-white rounded w-fit h-fit hover:bg-blue-300 hover-effect">Send Message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="bg-gray-800 text-white text-center py-4 mt-12">
+            &copy; 2023 elijah's Portfolio. All rights reserved.
+        </footer>
+    </section>
+
+    <script>
+        document.querySelector('.hamburger-menu').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

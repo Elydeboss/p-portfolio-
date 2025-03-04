@@ -45,28 +45,32 @@
         <h1 class="text-xl font-bold">About Me</h1>
     
      <!-- Container to hold both the image and the card -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 items-center justify-center">
-                <div>
-                    <!-- Image beside the card -->
-                    <img src="image2.jpg" alt="Profile Image" class="mr-0 w-[100%] max-w-sm min-w-md [20px] mt-[100px] sm:mx-auto rounded-full">
-                </div>
-                    
-                <div class=" bg-white shadow-lg rounded-lg max-w-sm p-12 hover-effect h-48">
-                    <h3 class="text-xl font-semibold mb-4">2 Years</h3>
-                    <p>of experience.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md hover-effect h-48 ">
-                    <h3 class="text-xl font-semibold mb-4">Frontend developer</h3>
-                    <p>Experienced Frontend Developer with a demonstrated history of working in the web development industry.</p>
-                </div>
-
-            </div>    
-
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 items-center justify-center">
+            <div>
+                <!-- Image beside the card -->
+                <img src="image2.jpg" alt="Profile Image" class="w-full max-w-sm mt-[100px] sm:mx-auto rounded-full">
+            </div>
+                
+            <div class="bg-white shadow-lg rounded-lg max-w-sm p-12 hover-effect h-48">
+                <h3 class="text-xl font-semibold mb-4">2 Years</h3>
+                <p>of experience.</p>
+            </div>
+        
+            <div class="bg-white p-6 rounded-lg shadow-md hover-effect h-48">
+                <h3 class="text-xl font-semibold mb-4">Frontend Developer</h3>
+                <p>Experienced Frontend Developer with a demonstrated history of working in the web development industry.</p>
+            </div>
+        </div>    
+        
+        <!-- Button section with extra spacing on small screens -->
+        <div class="mt-6 sm:mt-12 lg:mt-16 text-center">
             <a href="my resume.pdf" download>
-                <button class="py-6 px-4 bg-purple-400 text-white rounded-full w-fit h-fit active:bg-purple-200 hover:scale-125 duration:300 ease-in-out">
-                    download my cv
+                <button class="py-3 px-6 bg-purple-400 text-white rounded-full w-fit active:bg-purple-200 hover:scale-110 transition-transform duration-300 ease-in-out">
+                    Download My CV
                 </button>
             </a>
+        </div>
+
        
     </section>
 

@@ -121,3 +121,9 @@ section {
     text-align: right;
 
 }
+@media (max-width: 768px) {
+    .body {
+        overflow-x: hidden;
+    }
+}
+
